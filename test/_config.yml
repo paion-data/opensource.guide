@@ -1,2 +1,3 @@
 # Override config for tests
-baseurl: ""
+baseurl: "/opensource.guide"
+url: "https://paion-data.github.io"
