@@ -1,9 +1,10 @@
 title: Open Source Guides
 description: Learn how to launch and grow your project.
+baseurl: "/opensource.guide"
+url: "https://paion-data.github.io"
 
 exclude:
   - bin
-  - CNAME
   - CODE_OF_CONDUCT.md
   - CONTRIBUTING.md
   - docs
