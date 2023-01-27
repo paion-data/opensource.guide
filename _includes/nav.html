@@ -14,24 +14,6 @@
             {{ t.nav.contribute }}
           </a>
         </li>
-        {% if page.lang and site.data.locales.size > 1 %}
-        <li class="d-inline-block">
-          <div class="p-3">
-            <select id="language" class="form-select">
-              {% assign locales = site.data.locales | sort %}
-              {% for locale in locales %}
-              {% assign lang = locale[0] %}
-              {% assign locale_name = locale[1][lang].locale_name %}
-              {% if page.lang == lang %}
-              <option value="{{ lang }}" selected="selected">{{ locale_name }}</option>
-              {% else %}
-              <option value="{{ lang }}">{{ locale_name }}</option>
-              {% endif %}
-              {% endfor %}
-            </select>
-          </div>
-        </li>
-        {% endif %}
       </ul>
     </div>
     {% if page.layout != 'index' %}
